@@ -136,17 +136,17 @@
     <main class="app-content">
      <div class="app-title">
         <div class="hmmm">
-          <h1><i class="fa fa-edit"></i> Manage Classes</h1>
+          <h1><i class="fa fa-edit"></i> List Of student </h1>
           <p></p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Manage Classes</a></li>
+          <li class="breadcrumb-item"><a href="listOfStudent.html">Manage Student</a></li>
         </ul>
     </div>
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
             <div class="tile">
               <div class="tile-body">
                 <div class="table-responsive">
@@ -155,9 +155,18 @@
                     <tr>
                       <th>ID</th>
                       <th>Name</th>
-                      <th>Class Duration</th>
-                      <th>Available Seat</th>
-                      <th>Action</th>
+                      <th>Email</th>
+                      <th>Mobile Number</th>
+                      <th>Class</th>
+                      <th>section</th>
+                      <th>shift</th>
+                      <th>session Year</th>
+                      <th>scholarship</th>
+                      <th>blood group</th>
+                      
+                      <th>group</th>
+                      <th>fourth subject</th>
+                      <th>Manage Student</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -165,6 +174,15 @@
                       <td>01</td>
                       <td>Arif</td>
                       <td>4:60 am</td>
+                      <td>61</td>
+                      <td>01</td>
+                      <td>Arif</td>
+                      <td>4:60 am</td>
+                      <td>61</td>
+                      <td>01</td>
+                      <td>Arif</td>
+                      <td>4:60 am</td>
+                      
                       <td>61</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
@@ -176,6 +194,15 @@
                       <td>Accountant</td>
                       <td>Tokyo</td>
                       <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      
+                      <td>61</td>
                       <<td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -186,6 +213,15 @@
                       <td>Junior Technical Author</td>
                       <td>San Francisco</td>
                       <td>66</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      
+                      <td>61</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -196,6 +232,16 @@
                       <td>Senior Javascript Developer</td>
                       <td>Edinburgh</td>
                       <td>22</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      
+                      <td>61</td>
+
                      <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -206,6 +252,15 @@
                       <td>Accountant</td>
                       <td>Tokyo</td>
                       <td>33</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      
+                      <td>61</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -216,6 +271,15 @@
                       <td>Integration Specialist</td>
                       <td>New York</td>
                       <td>61</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      <td>63</td>
+                      <td>Garrett Winters</td>
+                      <td>Accountant</td>
+                      <td>Tokyo</td>
+                      
+                      <td>61</td>
                      <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -225,48 +289,6 @@
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-5">
-        <div class="tile">
-            <h3 class="tile-title border-bottom p-2">Add New Class</h3>
-          <div class="tile-body">
-            <form class="form-horizontal ml-5" style="font-size: 1rem;
-            font-weight: 400;">
-              <div class="form-group row">
-                <label class="control-label col-md-3 pl-4"> Class Name</label>
-                <div class="col-md-9">
-                  <input class="form-control col-md-10" type="text" id="className" name="className">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="control-label col-md-3 pl-4">Class Duration</label>
-                <div class="col-md-9">
-                  <input class="form-control col-md-10" type="text" id="classDuration" name="classDuration">
-                </div>
-              </div>
-              <div class="form-group row">
-                    <label class="control-label col-md-3 pl-4">Available Seat</label>
-                    <div class="col-md-9">
-                      <input class="form-control col-md-10" type="text" id="classSeat" name="classSeat">
-                    </div>
-                </div>
-              <div class="form-group row">
-                <label class="control-label col-md-3 pl-4">Comments</label>
-                <div class="col-md-9">
-                  <textarea class="form-control col-md-10" rows="4" id="classComment" name="classComment"></textarea>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="tile-footer">
-                <div class="row">
-                  <div class="col-md-12">
-                    <button class="btn btn-primary" type="submit" style="float: right;"><i class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
-                  </div>
-                </div>
             </div>
           </div>
         </div>
