@@ -26,7 +26,7 @@
   </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">School Erp</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -136,7 +136,7 @@
     <main class="app-content">
      <div class="app-title">
         <div class="hmmm">
-          <h1><i class="fa fa-edit"></i> Manage Classes</h1>
+          <h1><i class="fa fa-edit"></i> Manage Section</h1>
           <p></p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
@@ -155,8 +155,8 @@
                     <tr>
                       <th>ID</th>
                       <th>Class Name</th>
+                      <th>Section</th>
                       <th>Study Shift</th>
-                      <th>Subject</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -164,8 +164,8 @@
                     <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>2010</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -174,8 +174,8 @@
                      <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>2010</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -184,8 +184,8 @@
                      <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>Section A</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -194,8 +194,8 @@
                      <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>Section B</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -204,8 +204,8 @@
                      <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>Section A</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -214,8 +214,8 @@
                      <tr>
                       <td>01</td>
                       <td>Six</td>
+                      <td>Section B</td>
                       <td>Morning</td>
-                       <td>Biology</td>
                       <td>
                         <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
                         <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
@@ -236,7 +236,7 @@
             font-weight: 400;">
               <div class="form-group">
                 <label for="exampleSelect1">Select Class</label>
-                <select class="form-control" id="exampleSelect1">
+                <select class="form-control" id="sectionClass">
                   <option>Six</option>
                   <option>Seven</option>
                   <option>Eight</option>
@@ -244,15 +244,9 @@
                   <option>Ten</option>
                 </select>
               </div>
-              <div class="form-group">
-                <label for="exampleSelect1">Select Subject</label>
-                <select class="form-control" id="exampleSelect1">
-                  <option>Higher math</option>
-                  <option>Physics</option>
-                  <option>Chemistry</option>
-                  <option>Biology</option>
-                  <option>IT</option>
-                </select>
+               <div class="form-group">
+                <label for="exampleSelect1">Section Name</label>
+                  <input class="form-control"  type="text" id="sectionName" name="sectionName" placeholder="Enter Section Name">
               </div>
               <fieldset class="form-group">
                     <legend>Study Shift</legend>
