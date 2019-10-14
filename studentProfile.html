@@ -88,7 +88,7 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">MD. Principle </p>
+          <p class="app-sidebar__user-name">MD. Teacher </p>
           <p class="app-sidebar__user-designation">Sun Flower School</p>
         </div>
       </div>
@@ -101,8 +101,6 @@
               <li><a class="treeview-item" href="studentAdmission.html"><i class="icon fa fa-circle-o"></i> Student admission</a></li>
               <li><a class="treeview-item" href="listOfStudent.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> List of student</a></li>
               <li><a class="treeview-item" href="findStudent.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Class Wise Student</a></li>
-              <li><a class="treeview-item" href="addTeacher.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Add Teacher</a></li>
-              <li><a class="treeview-item" href="addClassTeacher.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i>Add Class Teacher</a></li>
             </ul>
           </li> 
           <li class="treeview"><a class="app-menu__item" href="student.html" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Student</span><i class="treeview-indicator fa fa-angle-right"></i></a>
@@ -125,14 +123,14 @@
           </li>  
           <li class="treeview"><a class="app-menu__item" href="section.html" data-toggle="treeview"><i class="app-menu__icon fa fa-bars"></i><span class="app-menu__label">Section</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-              <li><a class="treeview-item" href="section.html"><i class="icon fa fa-circle-o"></i> Add section</a></li>
+              <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Add section</a></li>
               <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> List of section</a></li>
             </ul>
           </li>  
           
           <li class="treeview"><a class="app-menu__item" href="subject.html" data-toggle="treeview"><i class="app-menu__icon fa fa-bars"></i><span class="app-menu__label">subject</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-              <li><a class="treeview-item" href="subject.html"><i class="icon fa fa-circle-o"></i> Add subject</a></li>
+              <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Add section</a></li>
               <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> List of section</a></li>
             </ul>
           </li>  
@@ -206,184 +204,134 @@
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-university">  </i> School Principle Dashboard</h1>
+          <h1><i class="fa fa-university">  </i> Student Profile </h1>
           <p>Manage Everything from one Place </p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#"> Student Profile</a></li>
         </ul>
       </div>
+      <!--start row-->
       <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card fa-5x" style="color:rgb(255, 255, 255);" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">List of Class Teacher</a></h4>
-              
+        <!--Start  section-->
+             <!-- Student Details Area Start Here -->
+             <div class="col-md-3"><a class="mb-2 btn btn-primary btn-block" href="">Importent Link</a>
+                <div class="tile p-0">
+                  <h4 class="tile-title folder-head">MY Profile</h4>
+                  <div class="tile-body">
+                      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="nav nav-pills flex-column mail-nav">
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-envelope-o fa-fw"></i> Attendance Information</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-filter fa-fw"></i> Notice Board <span class="badge badge-pill badge-primary float-right">8</span></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Payment Information</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Result Information</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Exam Timetable</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Teacher report</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Subject Information</a></li> 
+                      <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-inbox fa-fw"></i> Rutin Information<span class="badge badge-pill badge-primary float-right">12</span></a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i>  Class Teacher Information</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Bus Schedule</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Event Information</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-file-text-o fa-fw"></i> Home work</a></li>
+                    </ul>
+                  </div>
+                  </nav>
+                </div>
+                </div>
+              </div>
+             <div class="col-md-3 col-sm-12">
+                    <div class="heading-layout1">
+                            <div class="item-title">
+                                <a class="mb-2 btn btn-primary btn-block" href="#">Student Image</a>
+                            </div>
+                        </div>
+                    <div class="img-fluid mx-auto" alt="responsive image">
+                            <img class="mw-100 article" src="images/student1.jpg" alt="responsive image"  > </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12">
+                        <div class="eitem-content">
+                                <div class="header-inline item-header">
+                                        <a class="mb-2 btn btn-primary btn-block" href="#">Personol Information</a>
+                                    <h3 class="text-dark-medium font-medium">Jessia Rose</h3>
+                                    
+                                </div>
+                                <div class="info-table table-responsive">
+                                    <table class="table text-nowrap">
+                                        <tbody>
+                                            <tr>
+                                                <td>Name:</td>
+                                                <td class="font-medium text-dark-medium">Jessia Rose</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender:</td>
+                                                <td class="font-medium text-dark-medium">Female</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Father Name:</td>
+                                                <td class="font-medium text-dark-medium">Steve Jones</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mother Name:</td>
+                                                <td class="font-medium text-dark-medium">Naomi Rose</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date Of Birth:</td>
+                                                <td class="font-medium text-dark-medium">07.08.2016</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Religion:</td>
+                                                <td class="font-medium text-dark-medium">Islam</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Father Occupation:</td>
+                                                <td class="font-medium text-dark-medium">Graphic Designer</td>
+                                            </tr>
+                                            <tr>
+                                                <td>E-mail:</td>
+                                                <td class="font-medium text-dark-medium">jessiarose@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Admission Date:</td>
+                                                <td class="font-medium text-dark-medium">07.08.2019</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Class:</td>
+                                                <td class="font-medium text-dark-medium">2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Section:</td>
+                                                <td class="font-medium text-dark-medium">Pink</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Roll:</td>
+                                                <td class="font-medium text-dark-medium">10005</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address:</td>
+                                                <td class="font-medium text-dark-medium">House #10, Road #6, Australia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Phone:</td>
+                                                <td class="font-medium text-dark-medium">+ 88 98568888418</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
             </div>
-          </div>
-        </div>
-        
-      
-        <!--end single button-->
-        <div class="col-md-3 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">List of teacher </a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-user-plus fa-5x" style="color:#e2eef0;" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addClassTeacher.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">Add Class Teacher</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <!--single button-->
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-user-plus fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addTeacher.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">Add Teacher</a></h4>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="listOfStudent.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true"> list of student </a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="class.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of class</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of emplyee</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="class.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add Class</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <!-- 
-          <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-book fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of subject</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        -->
-        
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-bars fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of group</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-book fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add subject</a></h4>
-              
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addgroup.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add group</a></h4>
-              
-            </div>
-          </div>
-        </div>
-       
-       <!--
-
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-bars fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of section</a></h4>
-              
-            </div>
-          </div>
-        </div>
-       --> 
-
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="section.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add section</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">teacher attendence</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">student attendance</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-user fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of fee</a></h4>
-              
-            </div>
-          </div>
-        </div>-->
-
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true" ></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of fee</a></h4>
-            </div>
-          </div>
-        </div> 
-        <!--end single list-->
-
+             
+                <!-- Student Details Area End Here -->
+        <!--End  section -->
       </div>
-      <div class="row">
-        <!--removed chart-->
-      </div>
-      <div class="row">
-        <!--compatibility information removed-->
-      </div>
+      <!--End Row-->
     </main>
     <!-- Essential javascripts for application to work-->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -435,11 +383,6 @@
       	}
       ]
       
-      var ctxl = $("#lineChartDemo").get(0).getContext("2d");
-      var lineChart = new Chart(ctxl).Line(data);
-      
-      var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-      var pieChart = new Chart(ctxp).Pie(pdata);
     </script>
     <!-- Google analytics script-->
     <script type="text/javascript">

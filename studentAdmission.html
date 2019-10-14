@@ -24,7 +24,7 @@
   </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">SChool ERP</a>
       <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
       <!-- Navbar Right Menu-->
       <ul class="app-nav">
@@ -143,8 +143,9 @@
           <li class="breadcrumb-item"><a href="studentAdmission.html">Student Admisssion</a></li>
         </ul>
       </div>
+      <!--
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-8">
           <div class="tile">
             <h3 class="tile-title">Student Admission Form</h3>
             <div class="tile-body">
@@ -152,10 +153,6 @@
                 <div class="form-group">
                   <label class="control-label">Name</label>
                   <input class="form-control" type="text" placeholder="Enter full name">
-                </div>
-                <div class="form-group">
-                  <label class="control-label">Email</label>
-                  <input class="form-control" type="email" placeholder="Enter email address">
                 </div>
                 <div class="form-group">
                     <label class="control-label">Mobile No</label>
@@ -262,7 +259,132 @@
           </div>
         </div>
       </div>
-        <div class="clearix"></div>
+      -->
+      <div class="row">
+          <!--Start inline section-->
+          <div class="clearix"></div>
+          <div class="col-md-6">
+            <div class="tile">
+                  <h3 class="tile-title border-bottom p-2">Student Admission Form</h3>
+              <div class="tile-body">
+                <form class="row">
+                  <div class="form group col-md-3">
+                      <label class="control-label">Name</label>
+                      <input class="form-control" type="text" placeholder="Enter full name">
+
+                  </div>
+                  <div class="form group col-md-3">
+                      <label class="control-label">Mobile No</label>
+                    <input class="form-control" type="text" placeholder="Enter Your mobile Number">
+
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="exampleFormControlSelect1">Select Class</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                        <option>Class 3</option>
+                        <option>Class 4</option>
+                        <option>Class 5</option>
+                        <option>Class 6</option>
+                        <option>Class 7</option>
+                        <option>Class 8</option>
+                        <option>Class 9</option>
+                        <option>Class 10</option>
+                      </select>
+              </div>
+              <div class="form-group col-md-3">
+                  <label for="exampleFormControlSelect1"> Section</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Section A</option>
+                    <option>Section B</option>
+                    <option>Section C</option>
+                    <option>section D</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-3">
+              <label for="exampleFormControlSelect1"> Shift</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Morning shift </option>
+                  <option>Day shift</option>
+                  <option>Evening shift</option>            
+              </select>
+              </div>
+                  <!-- single section-->
+                  <div class="form-group col-md-3">
+                          <label for="exampleFormControlSelect1">Session Year</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                              <option>2019-2020</option>
+                              <option>2020-2021</option>
+                          </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1">Student BLood Group</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>O+</option>
+                          <option>O-</option>
+                          <option>A-</option>
+                          <option>A+</option>
+                          <option>B+</option>
+                          <option>B-</option>
+                          <option>AB-</option>
+                          <option>AB+</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1" class=" control-label">Date of Birth*</label>
+                        <div class="form-check">
+                            <input type="date" id="birthDate" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1"> Group</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Scince</option>
+                          <option>Arts</option>
+                          <option>Commerce</option>
+                          <option>General</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1"> Fourth Subject</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Highter Math</option>
+                          <option>ICT</option>
+                          <option>Agriculture</option>
+                          <option>Economics</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label class="control-label">Scholarship/Discount</label>
+                    
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="shholarship" value="yes">Yes 
+                        </label>
+                        </div>
+                    </div>
+                  </div>
+                  
+                    <div class="form-group">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">I accept the terms and conditions
+                          </label>
+                        </div>
+                      </div> 
+                  <div class="tile-footer">
+                      <a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>&nbsp;&nbsp;&nbsp;<button class="btn btn-primary float-right" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>  
+          <!--End inline section -->
+          
+        </div>  
       </div>
     </main>
     <!-- Essential javascripts for application to work-->

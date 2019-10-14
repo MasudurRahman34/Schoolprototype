@@ -88,7 +88,7 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">MD. Principle </p>
+          <p class="app-sidebar__user-name">MD. Teacher </p>
           <p class="app-sidebar__user-designation">Sun Flower School</p>
         </div>
       </div>
@@ -101,8 +101,6 @@
               <li><a class="treeview-item" href="studentAdmission.html"><i class="icon fa fa-circle-o"></i> Student admission</a></li>
               <li><a class="treeview-item" href="listOfStudent.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> List of student</a></li>
               <li><a class="treeview-item" href="findStudent.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Class Wise Student</a></li>
-              <li><a class="treeview-item" href="addTeacher.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Add Teacher</a></li>
-              <li><a class="treeview-item" href="addClassTeacher.html" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i>Add Class Teacher</a></li>
             </ul>
           </li> 
           <li class="treeview"><a class="app-menu__item" href="student.html" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Student</span><i class="treeview-indicator fa fa-angle-right"></i></a>
@@ -125,14 +123,14 @@
           </li>  
           <li class="treeview"><a class="app-menu__item" href="section.html" data-toggle="treeview"><i class="app-menu__icon fa fa-bars"></i><span class="app-menu__label">Section</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-              <li><a class="treeview-item" href="section.html"><i class="icon fa fa-circle-o"></i> Add section</a></li>
+              <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Add section</a></li>
               <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> List of section</a></li>
             </ul>
           </li>  
           
           <li class="treeview"><a class="app-menu__item" href="subject.html" data-toggle="treeview"><i class="app-menu__icon fa fa-bars"></i><span class="app-menu__label">subject</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-              <li><a class="treeview-item" href="subject.html"><i class="icon fa fa-circle-o"></i> Add subject</a></li>
+              <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> Add section</a></li>
               <li><a class="treeview-item" href="#"><i class="icon fa fa-circle-o"></i> List of section</a></li>
             </ul>
           </li>  
@@ -206,183 +204,73 @@
     <main class="app-content">
       <div class="app-title">
         <div>
-          <h1><i class="fa fa-university">  </i> School Principle Dashboard</h1>
+          <h1><i class="fa fa-university">  </i> School teacher Dashboard</h1>
           <p>Manage Everything from one Place </p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="index">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Class wise Student</a></li>
         </ul>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card fa-5x" style="color:rgb(255, 255, 255);" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">List of Class Teacher</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        
-      
-        <!--end single button-->
-        <div class="col-md-3 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-graduation-cap fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">List of teacher </a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-user-plus fa-5x" style="color:#e2eef0;" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addClassTeacher.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">Add Class Teacher</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <!--single button-->
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-user-plus fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addTeacher.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">Add Teacher</a></h4>
-              
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card-o fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="listOfStudent.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true"> list of student </a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="class.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of class</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of emplyee</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="class.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add Class</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <!-- 
-          <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-book fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of subject</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        -->
-        
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-bars fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of group</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-book fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add subject</a></h4>
-              
-            </div>
-          </div>
-        </div>
-       
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="addgroup.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add group</a></h4>
-              
-            </div>
-          </div>
-        </div>
-       
-       <!--
+        <!--Start inline section-->
+        <div class="clearix"></div>
+        <div class="col-md-8">
+          <div class="tile">
+                <h3 class="tile-title border-bottom p-2">Class wise Student</h3>
+            <div class="tile-body">
+              <form class="row">
+                <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1"> Shift</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Morning shift </option>
+                            <option>Day shift</option>
+                            <option>Evening shift</option>            
+                        </select>
+                </div>
+                <!-- single section-->
+                <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1">Select Class</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Class 1</option>
+                          <option>Class 2</option>
+                          <option>Class 3</option>
+                          <option>Class 4</option>
+                          <option>Class 5</option>
+                          <option>Class 6</option>
+                          <option>Class 7</option>
+                          <option>Class 8</option>
+                          <option>Class 9</option>
+                          <option>Class 10</option>
+                        </select>
+                </div>
+                <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1"> Section</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>Section A</option>
+                          <option>Section B</option>
+                          <option>Section C</option>
+                          <option>section D</option>
+                        </select>
+                </div>
+                <div class="form-group col-md-3">
+                        <label for="exampleFormControlSelect1">Session Year</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>2019-2020</option>
+                            <option>2020-2021</option>
+                        </select>
+                    </div>    
 
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-bars fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of section</a></h4>
-              
+                <div class="form-group col-md-12">
+                  <button class="btn btn-primary float-right" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Find student</button>
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-       --> 
-
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small warning coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="section.html" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">add section</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small info coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">teacher attendence</a></h4>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">student attendance</a></h4>
-              
-            </div>
-          </div>
-        </div>
+        </div>  
+        <!--End inline section -->
         
-        <!-- <div class="col-md-6 col-lg-3">
-          <div class="widget-small danger coloured-icon"><i class="icon fa fa-user fa-5x" aria-hidden="true"></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of fee</a></h4>
-              
-            </div>
-          </div>
-        </div>-->
-
-        <div class="col-md-6 col-lg-3">
-          <div class="widget-small primary coloured-icon"><i class="icon fa fa-address-card fa-5x" aria-hidden="true" ></i>
-            <div class="info">
-              <h4><a href="#" class="btn btn-outline-primary mr-auto" role="button" aria-pressed="true">list of fee</a></h4>
-            </div>
-          </div>
-        </div> 
-        <!--end single list-->
-
-      </div>
-      <div class="row">
-        <!--removed chart-->
-      </div>
-      <div class="row">
-        <!--compatibility information removed-->
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
