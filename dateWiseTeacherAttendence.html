@@ -13,13 +13,13 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Form Samples - Vali Admin</title>
+    <title>Data Table - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- style.css -->
+    <!-- style CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -105,18 +105,18 @@
             </ul>
         </li>
         <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
                 <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-                <li><a class="treeview-item active" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
+                <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
                 <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
             </ul>
         </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-                <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+                <li><a class="treeview-item active" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
             </ul>
         </li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
@@ -135,164 +135,73 @@
 </aside>
 <main class="app-content">
     <div class="app-title">
-        <div class="hmmm">
-            <h1><i class="fa fa-edit"></i> Manage Teacher</h1>
-            <p></p>
+        <div>
+            <h1><i class="fa fa-bug" aria-hidden="true">&nbsp;</i>Date Wise Teacher Attendence Reports</h1>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
+        <ul class="app-breadcrumb breadcrumb side">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Manage Teacher</a></li>
+            <li class="breadcrumb-item">Tables</li>
+            <li class="breadcrumb-item active"><a href="#">Teacher Attendence Reports</a></li>
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
             <div class="tile">
                 <div class="tile-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover table-bordered" id="sampleTable">
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Teacher Name</th>
-                                <th>Mobile</th>
-                                <th>Shift</th>
-                                <th>Permission</th>
-                                <th>Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Morning</td>
-                                <td>Admission</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Mishu Sir</td>
-                                <td>0172348556</td>
-                                <td>Evening</td>
-                                <td>Class Teacher</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Amit Sir</td>
-                                <td>0172390975</td>
-                                <td>Morning</td>
-                                <td>Attendence</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Evening</td>
-                                <td>Hostel</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Rayhan Sir</td>
-                                <td>01723434375</td>
-                                <td>Morning</td>
-                                <td>Event</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Evening</td>
-                                <td>Class Teacher</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>01/10/2019</td>
+                            <td>
+                                <a href="updateTeacherAttendence.html"><button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button></a>
+                                <a href="viewTeacherAttendenceDetails.html"><button id="demoSwal" class="btn btn-success btn-xs"><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+                                <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02/10/2019</td>
+                            <td>
+                                <a href="updateTeacherAttendence.html"><button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button></a>
+                                <a href="viewTeacherAttendenceDetails.html"><button id="demoSwal" class="btn btn-success btn-xs"><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+                                <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03/10/2019</td>
+                            <td>
+                                <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
+                                <button id="demoSwal" class="btn btn-success btn-xs"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>03/10/2019</td>
+                            <td>
+                                <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
+                                <button id="demoSwal" class="btn btn-success btn-xs"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>04/10/2019</td>
+                            <td>
+                                <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
+                                <button id="demoSwal" class="btn btn-success btn-xs"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-
-        <div class="col-md-5">
-            <div class="tile">
-                <h3 class="tile-title border-bottom p-2"> Add Teacher</h3>
-                <div class="tile-body">
-                    <form class="form-horizontal ml-5" style="font-size: 1rem;
-            font-weight: 400;">
-                        <div class="form-group">
-                            <label for="exampleSelect1">Teacher Name</label>
-                            <input class="form-control"  type="text" id="teacherName" name="teacherName" placeholder="Enter Teacher Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleSelect1">Mobile No</label>
-                            <input class="form-control"  type="number" id="mobile" name="mobile" placeholder="Enter Your Bobile No">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleSelect1">Shift</label>
-                            <select class="form-control" name="shift" id="shift">
-                                <option>Morning</option>
-                                <option>Evening</option>
-                            </select>
-                        </div>
-                        <!--Checkbox Markup-->
-                        <fieldset class="form-group">
-                            <legend id="permission" id="permission">Permission</legend>
-                            <div class="animated-checkbox">
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Admission</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Student</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Teacher</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Result</span>
-                                </label>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-                <div class="tile-footer">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <button class="btn btn-primary" type="submit" style="float: right;"><i class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-
-    </div>
-    <div class="clearix"></div>
 </main>
 <!-- Essential javascripts for application to work-->
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -308,6 +217,13 @@
 <!-- Data table plugin-->
 <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+
+
+
+
+
+
+
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.0/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.flash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -323,13 +239,6 @@
         ]
     }
 );</script>
-<script type="text/javascript">
-    if (window.matchMedia("(max-width: 767px)").matches)
-    {
-        $('#sampleTable_filter').css("margin-top", "7px");
-
-    }
-</script>
 <!-- Google analytics script-->
 <script type="text/javascript">
     if(document.location.hostname == 'pratikborsadiya.in') {

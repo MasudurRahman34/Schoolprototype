@@ -136,153 +136,52 @@
 <main class="app-content">
     <div class="app-title">
         <div class="hmmm">
-            <h1><i class="fa fa-edit"></i> Manage Teacher</h1>
+            <h1><i class="fa fa-edit"></i>Search Teacher Attendence By Monthly</h1>
             <p></p>
         </div>
         <ul class="app-breadcrumb breadcrumb">
             <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
             <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Manage Teacher</a></li>
+            <li class="breadcrumb-item"><a href="#">Search Teacher Attendence By Monthly</a></li>
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-7">
-            <div class="tile">
-                <div class="tile-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover table-bordered" id="sampleTable">
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Teacher Name</th>
-                                <th>Mobile</th>
-                                <th>Shift</th>
-                                <th>Permission</th>
-                                <th>Action</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Morning</td>
-                                <td>Admission</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Mishu Sir</td>
-                                <td>0172348556</td>
-                                <td>Evening</td>
-                                <td>Class Teacher</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Amit Sir</td>
-                                <td>0172390975</td>
-                                <td>Morning</td>
-                                <td>Attendence</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Evening</td>
-                                <td>Hostel</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Rayhan Sir</td>
-                                <td>01723434375</td>
-                                <td>Morning</td>
-                                <td>Event</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Shuvo Sir</td>
-                                <td>0172348575</td>
-                                <td>Evening</td>
-                                <td>Class Teacher</td>
-                                <td>
-                                    <button class="btn btn-info btn-xs"><i class="fa fa-edit"></i></button>
-                                    <button id="demoSwal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></button>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="col-md-5">
             <div class="tile">
-                <h3 class="tile-title border-bottom p-2"> Add Teacher</h3>
+                <h3 class="tile-title border-bottom p-2">Search Teachers Monthly Report</h3>
                 <div class="tile-body">
                     <form class="form-horizontal ml-5" style="font-size: 1rem;
             font-weight: 400;">
                         <div class="form-group">
                             <label for="exampleSelect1">Teacher Name</label>
-                            <input class="form-control"  type="text" id="teacherName" name="teacherName" placeholder="Enter Teacher Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleSelect1">Mobile No</label>
-                            <input class="form-control"  type="number" id="mobile" name="mobile" placeholder="Enter Your Bobile No">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleSelect1">Shift</label>
-                            <select class="form-control" name="shift" id="shift">
-                                <option>Morning</option>
-                                <option>Evening</option>
+                            <select class="form-control" id="teacherName">
+                                <option>Shuvo Sir</option>
+                                <option>Mishu Sir</option>
+                                <option>arif Sir</option>
+                                <option>Amith Sir</option>
+                                <option>Khan Sir</option>
+                                <option>Ali Sir</option>
                             </select>
                         </div>
-                        <!--Checkbox Markup-->
-                        <fieldset class="form-group">
-                            <legend id="permission" id="permission">Permission</legend>
-                            <div class="animated-checkbox">
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Admission</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Student</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Teacher</span>
-                                </label>
-                                &nbsp;&nbsp;
-                                <label>
-                                    <input type="checkbox"><span class="label-text">Result</span>
-                                </label>
-                            </div>
-                        </fieldset>
+                        <div class="form-group">
+                            <label for="exampleSelect1">Month</label>
+                            <select class="form-control" id="month">
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>Augest</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="tile-footer">
                     <div class="row">
                         <div class="col-md-12">
-                            <button class="btn btn-primary" type="submit" style="float: right;"><i class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                            <button class="btn btn-primary" type="submit" style="float: right;"><i class="fa fa-fw fa-lg fa-check-circle"></i>Search</button>
                         </div>
                     </div>
                 </div>
@@ -299,9 +198,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<!-- Sweet alert -->
-<script type="text/javascript" src="js/plugins/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="js/plugins/sweetalert.min.js"></script>
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
@@ -340,26 +236,6 @@
         ga('create', 'UA-72504830-1', 'auto');
         ga('send', 'pageview');
     }
-</script>
-<script type="text/javascript">
-    $('#demoSwal').click(function(){
-        swal({
-            title: "Are you sure?",
-            text: "You will not be able to recover this imaginary file!",
-            type: "warning",
-            showCancelButton: true,
-            confirmButtonText: "Yes, delete it!",
-            cancelButtonText: "No, cancel plx!",
-            closeOnConfirm: false,
-            closeOnCancel: false
-        }, function(isConfirm) {
-            if (isConfirm) {
-                swal("Deleted!", "Your imaginary file has been deleted.", "success");
-            } else {
-                swal("Cancelled", "Your imaginary file is safe :)", "error");
-            }
-        });
-    });
 </script>
 </body>
 </html>
