@@ -16,20 +16,27 @@
   <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
   <meta property="og:description"
     content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-  <title>School ERP Admin - Free Bootstrap 4 Admin Template</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--add for card-->
+
+  <!--end card -->
   <!-- Main CSS-->
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- Font-icon css-->
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type=text/css href="css/id.css">
+  <style>
+
+  </style>
 </head>
 
 <body class="app sidebar-mini rtl">
   <!-- Navbar-->
-  <header class="app-header"><a class="app-header__logo" href="index.html">School ERP</a>
+  <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
     <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
       aria-label="Hide Sidebar"></a>
     <!-- Navbar Right Menu-->
@@ -115,8 +122,8 @@
     <div class="app-sidebar__user"><img class="app-sidebar__user-avatar"
         src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
       <div>
-        <p class="app-sidebar__user-name">MR. Class Teacher </p>
-        <p class="app-sidebar__user-designation">Sun Flower School</p>
+        <p class="app-sidebar__user-name">John Doe</p>
+        <p class="app-sidebar__user-designation">Frontend Developer</p>
       </div>
     </div>
     <ul class="app-menu">
@@ -126,12 +133,18 @@
             class="app-menu__icon fa fa-graduation-cap"></i><span class="app-menu__label">Student Profile</span><i
             class="treeview-indicator fa fa-angle-right"></i></a>
         <ul class="treeview-menu">
-          <li><a class="treeview-item" href="studentProfile.html"><i class="icon fa fa-circle-o"></i> Student
-              Profile</a></li>
-          <li><a class="treeview-item" href="updateStudentProfile.html"><i class="icon fa fa-circle-o"></i> Update
-              Profile</a></li>
-          <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-envelope-o fa-fw"></i> Attendance
-              Information</a></li>
+          <li><a class="treeview-item" href="studentProfile.html" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i>My Profile</a></li>
+          <li><a class="treeview-item" href="updateStudentProfile.html" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i>Update Profile</a></li>
+          <li><a class="treeview-item" href="listOfStudent.html" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i> List of student</a></li>
+          <li><a class="treeview-item" href="listofTeacher.html" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i>list Of Teacher</a></li>
+          <li><a class="treeview-item" href="listofclassTeacher.html" target="_blank" rel="noopener"><i
+                class="icon fa fa-circle-o"></i>list Of class Teacher</a></li>
+          <li class="nav-item"><a class="treeview-item" href=""><i class="fa fa-envelope-o fa-fw"></i> Attendance
+              Informmation</a></li>
           <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-filter fa-fw"></i> Notice Board <span
                 class="badge badge-pill badge-primary float-right">8</span></a></li>
           <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-file-text-o fa-fw"></i> Payment
@@ -142,9 +155,8 @@
               Timetable</a></li>
           <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-file-text-o fa-fw"></i> Teacher
               report</a></li>
-
-          <li class="nav-item"><a class="treeview-item" href="individualSubjectList.html"><i
-                class="fa fa-file-text-o fa-fw"></i> Subject Information</a></li>
+          <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-file-text-o fa-fw"></i> Subject
+              Information</a></li>
           <li class="nav-item active"><a class="treeview-item" href="#"><i class="fa fa-inbox fa-fw"></i> Rutin
               Information<span class="badge badge-pill badge-primary float-right">12</span></a></li>
           <li class="nav-item"><a class="treeview-item" href="#"><i class="fa fa-file-text-o fa-fw"></i> Class Teacher
@@ -157,110 +169,155 @@
           </li>
           <li class="nav-item"><a class="treeview-item" href="teacherlist.html"><i class="fa fa-file-text-o fa-fw"></i>
               Teacher list</a></li>
+          <li class="nav-item"><a class="treeview-item" href="studentid2.html"><i class="fa fa-file-text-o fa-fw"></i>
+              School ID</a></li>
         </ul>
       </li>
+
     </ul>
-
-
-    </div>
   </aside>
   <main class="app-content">
     <div class="app-title">
       <div>
-        <h1><i class="fa fa-university"> </i> Student Profile </h1>
-        <p>Manage Everything from one Place </p>
+        <h1><i class="fa fa-dashboard"></i> Student ID card</h1>
+
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="#"> Student Profile</a></li>
+        <li class="breadcrumb-item"><a href="#">ID Card</a></li>
       </ul>
     </div>
-    <!--start row-->
-    <div class="row">
-      <!--Start  section-->
-      <!-- Student Details Area Start Here -->
-
-      <div class="col-md-3 col-sm-12">
-        <div class="heading-layout1">
-          <div class="item-title">
-            <a class="mb-2 btn btn-primary btn-block" href="#">Class Teacher Image</a>
-          </div>
-        </div>
-        <div class="img-fluid mx-auto" alt="responsive image">
-          <img class="mw-100 article" src="images/classteacher1.jpg" alt="responsive image"> </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="eitem-content">
-          <div class="header-inline item-header">
-            <a class="mb-2 btn btn-primary btn-block" href="#">Personol Information</a>
-            <h3 class="text-dark-medium font-medium">Mishuk Alam</h3>
-
-          </div>
-          <div class="info-table table-responsive">
-            <table class="table text-nowrap">
-              <tbody>
-                <tr>
-                  <td>Name:</td>
-                  <td class="font-medium text-dark-medium">MishukAlam</td>
-                </tr>
-                <tr>
-                  <td>Gender:</td>
-                  <td class="font-medium text-dark-medium">Female</td>
-                </tr>
-                <tr>
-                  <td>Father Name:</td>
-                  <td class="font-medium text-dark-medium">Steve Jones</td>
-                </tr>
-                <tr>
-                  <td>Mother Name:</td>
-                  <td class="font-medium text-dark-medium">Naomi Rose</td>
-                </tr>
-                <tr>
-                  <td>Date Of Birth:</td>
-                  <td class="font-medium text-dark-medium">07.08.2016</td>
-                </tr>
-                <tr>
-                  <td>Religion:</td>
-                  <td class="font-medium text-dark-medium">Islam</td>
-                </tr>
-
-                <tr>
-                  <td>E-mail:</td>
-                  <td class="font-medium text-dark-medium">jessiarose@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Class teacher of:</td>
-                  <td class="font-medium text-dark-medium">9</td>
-                </tr>
-                <tr>
-                  <td>Section:</td>
-                  <td class="font-medium text-dark-medium">B</td>
-                </tr>
-                <tr>
-                  <td>shift:</td>
-                  <td class="font-medium text-dark-medium">Evening</td>
-                </tr>
-                <tr>
-                  <td>House Address:</td>
-                  <td class="font-medium text-dark-medium">House #10, Road #6, Australia</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td class="font-medium text-dark-medium">+ 88 98568888418</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="tile ">
+          <div class="tile-body"><button class="text-center justify-content-md-center" id="doPrint">Print me</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-12">
-      </div>
-
-      <!-- Student Details Area End Here -->
-      <!--End  section -->
     </div>
-    <!--End Row-->
+    <div class="row justify-content-md-center" id="printDiv">
+      <div class="m-2">
+        <div class="clo-md-3">
+          <!--start section-->
+          <div class="id-card-holder">
+            <div class="id-card">
+              <div class="header">
+                <h3 class="card-text text-center">Sun Flower School</h3>
+                <h3 class="card-text text-center">Dhaka 1209 </h3>
+                <img src="">
+              </div>
+              <div class="photo">
+                <img src="images/student2.jpg">
+              </div>
+              <h2 class="card-title">Name:<span>John Kabir</span></h2>
+              <h3 class="card-text">Class:<span>9</span></h3>
+              <h3 class="card-text">Roll:<span>01</span></h3>
+              <h3> shift:<span>Evening</span></h3>
+              <h3 class="card-text">session:<span>2019</span></h3>
+
+              <hr>
+              <p><strong>"PENGG"</strong>HOUSE,4th Floor, TC 11/729(4), Division Office Road <p>
+                  <p>Near PMG Junction, Thiruvananthapuram Kerala, India <strong>695033</strong></p>
+                  <p>Ph: 9446062493 | E-ail: info@onetikk.info</p>
+
+            </div>
+          </div>
+          <!--end section-->
+        </div>
+      </div>
+
+      <div class="m-2">
+        <div class="clo-md-3">
+          <!--start section-->
+          <div class="id-card-holder">
+            <div class="id-card">
+              <div class="header">
+                <h3 class="card-text text-center">Sun Flower School</h3>
+                <h3 class="card-text text-center">Dhaka 1209 </h3>
+                <img src="">
+              </div>
+              <div class="photo">
+                <img src="images/student2.jpg">
+              </div>
+              <h2 class="card-title">Name:<span>John Kabir</span></h2>
+              <h3 class="card-text">Class:<span>9</span></h3>
+              <h3 class="card-text">Roll:<span>01</span></h3>
+              <h3> shift:<span>Evening</span></h3>
+              <h3 class="card-text">session:<span>2019</span></h3>
+
+              <hr>
+              <p><strong>"PENGG"</strong>HOUSE,4th Floor, TC 11/729(4), Division Office Road <p>
+                  <p>Near PMG Junction, Thiruvananthapuram Kerala, India <strong>695033</strong></p>
+                  <p>Ph: 9446062493 | E-ail: info@onetikk.info</p>
+
+            </div>
+          </div>
+          <!--end section-->
+        </div>
+      </div>
+
+      <div class="m-2">
+        <div class="clo-md-3">
+          <!--start section-->
+          <div class="id-card-holder">
+            <div class="id-card">
+              <div class="header">
+                <h3 class="card-text text-center">Sun Flower School</h3>
+                <h3 class="card-text text-center">Dhaka 1209 </h3>
+                <img src="">
+              </div>
+              <div class="photo">
+                <img src="images/teacherinformation1.jpg">
+              </div>
+              <h2 class="card-title">Name:<span>John Kabir</span></h2>
+              <h3 class="card-text">Class:<span>9</span></h3>
+              <h3 class="card-text">Roll:<span>01</span></h3>
+              <h3> shift:<span>Evening</span></h3>
+              <h3 class="card-text">session:<span>2019</span></h3>
+
+              <hr>
+              <p><strong>"PENGG"</strong>HOUSE,4th Floor, TC 11/729(4), Division Office Road <p>
+                  <p>Near PMG Junction, Thiruvananthapuram Kerala, India <strong>695033</strong></p>
+                  <p>Ph: 9446062493 | E-ail: info@onetikk.info</p>
+
+            </div>
+          </div>
+          <!--end section-->
+        </div>
+      </div>
+      <div class="m-2">
+        <div class="clo-md-3">
+          <!--start section-->
+          <div class="id-card-holder">
+            <div class="id-card">
+              <div class="header">
+                <h3 class="card-text text-center">Sun Flower School</h3>
+                <h3 class="card-text text-center">Dhaka 1209 </h3>
+                <img src="">
+              </div>
+              <div class="photo">
+                <img src="images/classteacher1.jpg">
+              </div>
+              <h2 class="card-title">Name:<span>John Kabir</span></h2>
+              <h3 class="card-text">Class:<span>9</span></h3>
+              <h3 class="card-text">Roll:<span>01</span></h3>
+              <h3> shift:<span>Evening</span></h3>
+              <h3 class="card-text">session:<span>2019</span></h3>
+
+              <hr>
+              <p><strong>"PENGG"</strong>HOUSE,4th Floor, TC 11/729(4), Division Office Road <p>
+                  <p>Near PMG Junction, Thiruvananthapuram Kerala, India <strong>695033</strong></p>
+                  <p>Ph: 9446062493 | E-ail: info@onetikk.info</p>
+
+            </div>
+          </div>
+          <!--end section-->
+        </div>
+      </div>
+
+
+    </div>
+
   </main>
   <!-- Essential javascripts for application to work-->
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -270,7 +327,16 @@
   <!-- The javascript plugin to display page loading on top-->
   <script src="js/plugins/pace.min.js"></script>
   <!-- Page specific javascripts-->
-  <script type="text/javascript" src="js/plugins/chart.js"></script>
+  <!-- Google analytics script-->
+  <script type="text/javascript">
+    document.getElementById("doPrint").addEventListener("click", function () {
+      var printContents = document.getElementById('printDiv').innerHTML;
+      var originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+    });
+  </script>
 
 </body>
 

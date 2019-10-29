@@ -16,14 +16,12 @@
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description"
         content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Data Table - Vali Admin</title>
+    <title>Invoice - Vali Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- style CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +29,7 @@
 
 <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">School Erp</a>
+    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
         <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar"
             aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
@@ -160,17 +158,17 @@
                             Notifications</a></li>
                 </ul>
             </li>
-            <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                         class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i
                         class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic
                             Tables</a></li>
-                    <li><a class="treeview-item active" href="table-data-table.html"><i class="icon fa fa-circle-o"></i>
-                            Data Tables</a></li>
+                    <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data
+                            Tables</a></li>
                 </ul>
             </li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i
+            <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview"><i
                         class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i
                         class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
@@ -182,8 +180,8 @@
                             Lockscreen Page</a></li>
                     <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a>
                     </li>
-                    <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice
-                            Page</a></li>
+                    <li><a class="treeview-item active" href="page-invoice.html"><i class="icon fa fa-circle-o"></i>
+                            Invoice Page</a></li>
                     <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar
                             Page</a></li>
                     <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i>
@@ -197,152 +195,73 @@
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-pencil" aria-hidden="true">&nbsp;</i>Update Staff Attendence</h1>
+                <h1><i class="fa fa-file-text-o"></i> User Details</h1>
+                <p>Pdf format</p>
             </div>
-            <ul class="app-breadcrumb breadcrumb side">
+            <ul class="app-breadcrumb breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item">Tables</li>
-                <li class="breadcrumb-item active"><a href="#">Update Staff Attendence</a></li>
+                <li class="breadcrumb-item"><a href="#">Invoice</a></li>
             </ul>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="tile">
-                    <div class="tile-body">
-                        <table class="table table-hover table-bordered" id="sampleTable">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Photo</th>
-                                    <th>Attendence</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Shuvo</td>
-                                    <td><img src="images/student.png" alt="img"></td>
-                                    <td>
-                                        <fieldset class="form-group">
-                                            <div class="animated-checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="" id="okCheck" class="check"
-                                                        value="present"><span style="color:#009688;"
-                                                        class="label-text">Present</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox" name="" class="check" value="absent"><span
-                                                        style="color: #dc3545;" class="label-text">Absent</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox" name="" class="check" value="Late"><span
-                                                        class="label-text">Late</span>
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mishu</td>
-                                    <td><img src="images/48.jpg" alt="img"></td>
-                                    <td>
-                                        <fieldset class="form-group">
-                                            <div class="animated-checkbox">
-                                                <label>
-                                                    <input type="checkbox"><span style="color:#009688;"
-                                                        class="label-text">Present</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span style="color: #dc3545;"
-                                                        class="label-text">Absent</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span class="label-text">Late</span>
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Ashton Cox</td>
-                                    <td><img src="images/student.png" alt="img"></td>
-                                    <td>
-                                        <fieldset class="form-group">
-                                            <div class="animated-checkbox">
-                                                <label>
-                                                    <input type="checkbox"><span style="color:#009688;"
-                                                        class="label-text">Present</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span style="color: #dc3545;"
-                                                        class="label-text">Absent</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span class="label-text">Late</span>
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Cedric Kelly</td>
-                                    <td><img src="images/48.jpg" alt="img"></td>
-                                    <td>
-                                        <fieldset class="form-group">
-                                            <div class="animated-checkbox">
-                                                <label>
-                                                    <input type="checkbox"><span style="color:#009688;"
-                                                        class="label-text">Present</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span style="color: #dc3545;"
-                                                        class="label-text">Absent</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span class="label-text">Late</span>
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Airi Satou</td>
-                                    <td><img src="images/48.jpg" alt="img"></td>
-                                    <td>
-                                        <fieldset class="form-group">
-                                            <div class="animated-checkbox">
-                                                <label>
-                                                    <input type="checkbox"><span style="color:#009688;"
-                                                        class="label-text">Present</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span style="color: #dc3545;"
-                                                        class="label-text">Absent</span>
-                                                </label>
-                                                &nbsp;&nbsp;
-                                                <label>
-                                                    <input type="checkbox"><span class="label-text">Late</span>
-                                                </label>
-                                            </div>
-                                        </fieldset>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="checkbox mb-2">
-                            <a href="viewStaffAttendenceDetails.html"><button class="btn btn-lg btn-primary "
-                                    type="submit"><i class="fa fa-plus-square" aria-hidden="true"></i>
-                                    Update Attendence</button></a>
+                    <section class="invoice" id="">
+                        <div class="row mb-4">
+                            <div class="col-6">
+
+
+                            </div>
+
+
                         </div>
-                    </div>
+                        <!-- <div class="row d-print-none mb-2">
+                            <div class="col-12 text-right"><a class="btn btn-primary" href="" target="_blank"
+                                    id="Print"><i class="fa fa-print"></i> Print</a></div>
+                        </div> -->
+
+                        <div class="row">
+                            <div class="col-md-12 table-responsive">
+
+                                <table class="table table-striped" id="">
+
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Subir sir</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email:</th>
+                                        <td>subir@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mobile Number:</th>
+                                        <td>01756641964</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Password</th>
+                                        <td>462570</td>
+                                    </tr>
+                                    <tr>
+                                        <th>School Name:</th>
+                                        <td>Faridpur high school</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Designation </th>
+                                        <td>Teacher</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Join Date</th>
+                                        <td>20/11/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Adderss</th>
+                                        <td>Faridpur</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -358,13 +277,6 @@
     <!-- Data table plugin-->
     <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
-
-
-
-
-
-
-
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.0/js/dataTables.buttons.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.flash.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
@@ -376,11 +288,26 @@
         $('#sampleTable').DataTable({
             dom: 'Bfrtip',
             buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
+                'copy', 'csv', 'excel', 'print'
             ]
         });
     </script>
+    <script type="text/javascript">
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            $('#sampleTable_filter').css("margin-top", "7px");
+
+        }
+    </script>
     <!-- Google analytics script-->
+    <script type="text/javascript">
+        document.getElementById("Print").addEventListener("click", function () {
+            var printContents = document.getElementById('printDiv').innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        });
+    </script>
     <script type="text/javascript">
         if (document.location.hostname == 'pratikborsadiya.in') {
             (function (i, s, o, g, r, a, m) {

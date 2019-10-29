@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-      img {
-        /*rounded-circle*/
-      }
-    </style>
-    <title>Login - Vali Admin</title>
-  </head>
-  <body>
-    <section class="material-half-bg">
-      <div class="cover"></div>
-    </section>
-    <section class="login-content">
-      <div class="logo" style="margin-bottom: 10px;">
-        <h1>School Management</h1>
-        <!-- <i style="float:left;margin-left:100px;" class="fa fa-graduation-cap fa-3x m-auto" aria-hidden="true"></i> -->
-        <div class="" style="float: left; margin-left: 100px;"><img  class="rounded-circle mx-auto" src="images/hmm.png" alt="img"></div>
-        
-      </div>
-      <div class="login-box" style="min-width: 430px;
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    img {
+      /*rounded-circle*/
+    }
+  </style>
+  <title>Login - Vali Admin</title>
+</head>
+<body>
+  <section class="material-half-bg">
+    <div class="cover"></div>
+  </section>
+  <section class="login-content">
+    <div class="logo" style="margin-bottom: 10px;">
+      <h1>School Management</h1>
+      <!-- <i style="float:left;margin-left:100px;" class="fa fa-graduation-cap fa-3x m-auto" aria-hidden="true"></i> -->
+      <div class="" style="float: left; margin-left: 100px;"><img class="rounded-circle mx-auto" src="images/hmm.png"
+          alt="img"></div>
+
+    </div>
+    <div class="login-box" style="min-width: 430px;
     min-height: 790px;">
-        <form class="login-form" style="top: -28px" action="index.html">
-          <h3 class="login-head"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Apply For Service</h3>
-          <div class="form-group">
-            <label class="control-label">Name Of The Institute</label>
-            <input class="form-control" type="text" name="institute" id="institute" placeholder="Name Of The Institute" autofocus>
+      <form class="login-form" style="top: -28px" action="index.html">
+        <h3 class="login-head"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Apply For Service</h3>
+        <div class="form-group">
+          <label class="control-label">Name Of The Institute</label>
+          <input class="form-control" type="text" name="institute" id="institute" placeholder="Name Of The Institute"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <label class="control-label">EIIN Number</label>
+          <input class="form-control" type="text" name="eiin" id="eiin" placeholder="EIIN Number" autofocus>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Phone No</label>
+          <input class="form-control" type="number" name="phone" placeholder="Phone No" autofocus>
+        </div>
+        <div class="form-group">
+          <label class="control-label">District</label>
+          <input class="form-control" type="text" name="district" id="district" placeholder="District" autofocus>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Address</label>
+          <input class="form-control" type="text" name="address" id="address" placeholder="Address" autofocus>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Name Of The Principal</label>
+          <input class="form-control" type="text" name="principal" id="principal" placeholder="Name Of The Principal"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <label for="exampleSelect1">Upozila</label>
+          <select class="form-control" id="sectionClass">
+            <option value="1">Boalmari Upazila</option>
+            <option value="2">Bhanga Upazila</option>
+            <option value="3">Bhanga Upazila</option>
+            <option value="4">Bhanga Upazila</option>
+            <option value="5">Bhanga Upazila</option>
+          </select>
+        </div>
+        <fieldset class="form-group">
+          <legend>School Type</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" id="1" type="radio" name="schoolType" value="option1" checked="">Public
+              Schools
+            </label>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            <label class="form-check-label">
+              <input class="form-check-input" id="2" type="radio" name="schoolType" value="option1">Private School
+            </label>
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
           </div>
-          <div class="form-group">
-            <label class="control-label">EIIN Number</label>
-            <input class="form-control" type="text" name="eiin" id="eiin" placeholder="EIIN Number" autofocus>
-          </div>
-          <div class="form-group">
-            <label class="control-label">Phone No</label>
-            <input class="form-control" type="number" name="phone" placeholder="Phone No" autofocus>
-          </div>
-           <div class="form-group">
-            <label class="control-label">District</label>
-            <input class="form-control" type="text" name="district" id="district" placeholder="District" autofocus>
-          </div>
-          <div class="form-group">
-            <label class="control-label">Address</label>
-            <input class="form-control" type="text" name="address" id="address" placeholder="Address" autofocus>
-          </div>
-         
-          <div class="form-group">
-            <label class="control-label">Name Of The Principal</label>
-            <input class="form-control" type="text" name="principal" id="principal" placeholder="Name Of The Principal" autofocus>
-          </div>
-          <div class="form-group">
-            <label for="exampleSelect1">Upozila</label>
-            <select class="form-control" id="sectionClass">
-              <option value="1">Boalmari Upazila</option>
-              <option value="2">Bhanga Upazila</option>
-              <option value="3">Bhanga Upazila</option>
-              <option value="4">Bhanga Upazila</option>
-              <option value="5">Bhanga Upazila</option>
-            </select>
-          </div>
-          <fieldset class="form-group">
-            <legend>School Type</legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" id="1" type="radio" name="schoolType" value="option1" checked="">Public Schools
-              </label>
-              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-              <label class="form-check-label">
-                <input class="form-check-input" id="2" type="radio" name="schoolType" value="option1">Private School
-              </label>
-              &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
-            </div>
-          </fieldset>
-          
-          <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Sent Request</button>
-          </div>
-          <br>
-        </form>
-      </div>
-    </section>
-    <!-- Essential javascripts for application to work-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- The javascript plugin to display page loading on top-->
-    <script src="js/plugins/pace.min.js"></script>
-    <script type="text/javascript">
-      // Login Page Flipbox control
-      $('.login-content [data-toggle="flip"]').click(function() {
-        // $('.login-box').toggleClass('flipped');
-        // return false;
-      });
-    </script>
-  </body>
+        </fieldset>
+
+        <div class="form-group btn-container">
+          <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>Sent Request</button>
+        </div>
+        <br>
+      </form>
+    </div>
+  </section>
+  <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  <script type="text/javascript">
+    // Login Page Flipbox control
+    $('.login-content [data-toggle="flip"]').click(function () {
+      // $('.login-box').toggleClass('flipped');
+      // return false;
+    });
+  </script>
+</body>
+
 </html>
