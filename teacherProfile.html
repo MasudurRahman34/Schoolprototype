@@ -119,8 +119,6 @@
         <p class="app-sidebar__user-designation">Sun Flower School</p>
       </div>
     </div>
-
-
     <ul class="app-menu">
       <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span
             class="app-menu__label">Dashboard</span></a></li>
@@ -131,23 +129,40 @@
           <li><a class="treeview-item" href="TeacherProfile.html" target="_blank" rel="noopener"><i
                 class="icon fa fa-circle-o"></i>My Profile</a></li>
           <li><a class="treeview-item" href="updateTeacherProfile.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i>Update Profile</a></li>
-          <li><a class="treeview-item" href="studentAdmission.html"><i class="icon fa fa-circle-o"></i> Student
-              admission</a></li>
-          <li><a class="treeview-item" href="listOfStudent.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i> List of student</a></li>
-          <li><a class="treeview-item" href="findStudent.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i> Class Wise Student</a></li>
-          <li><a class="treeview-item" href="addTeacher.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i> Add Teacher</a></li>
-          <li><a class="treeview-item" href="addClassTeacher.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i>Add Class Teacher</a></li>
-          <li><a class="treeview-item" href="listofTeacher.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i>list Of Teacher</a></li>
-          <li><a class="treeview-item" href="listofclassTeacher.html" target="_blank" rel="noopener"><i
-                class="icon fa fa-circle-o"></i>List Of Class Teacher</a></li>
+                class="icon fa fa-circle-o"></i>Update Profile Information</a></li>
+         
+         
         </ul>
       </li>
+      <li class="treeview "><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        class="app-menu__icon fa fa-graduation-cap"></i><span class="app-menu__label"> Teacher Management</span><i
+        class="treeview-indicator fa fa-angle-right"></i></a>
+      <ul class="treeview-menu">
+          <li><a class="treeview-item" href="addTeacher.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i> Add Teacher</a></li>
+      <li><a class="treeview-item" href="addClassTeacher.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i>Add Class Teacher</a></li>
+      <li><a class="treeview-item" href="listofTeacher.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i>list Of Teacher</a></li>
+      <li><a class="treeview-item" href="listofclassTeacher.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i>List Of Class Teacher</a></li>
+      </ul>
+  </li>
+
+      <li class="treeview "><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        class="app-menu__icon fa fa-graduation-cap"></i><span class="app-menu__label"> Student Admission</span><i
+        class="treeview-indicator fa fa-angle-right"></i></a>
+    <ul class="treeview-menu">
+        <li><a class="treeview-item" href="studentAdmission.html"><i class="icon fa fa-circle-o"></i> New Student
+          Admission</a></li>
+      <li><a class="treeview-item" href="listOfStudent.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i> List of student</a></li>
+      <li><a class="treeview-item" href="findStudent.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i> Find Student Class Wise</a></li>
+    </ul>
+  </li>
+
+
       <li class="treeview "><a class="app-menu__item" href="#" data-toggle="treeview"><i
             class="app-menu__icon fa fa-graduation-cap"></i><span class="app-menu__label"> Teacher Attendance</span><i
             class="treeview-indicator fa fa-angle-right"></i></a>
@@ -191,12 +206,23 @@
                 class="icon fa fa-circle-o"></i> Student search by roll</a></li>
         </ul>
       </li>
+      <li class="treeview "><a class="app-menu__item" href="#" data-toggle="treeview"><i
+        class="app-menu__icon fa fa-graduation-cap"></i><span class="app-menu__label">Student Payment</span><i
+        class="treeview-indicator fa fa-angle-right"></i></a>
+    <ul class="treeview-menu">
+      <li><a class="treeview-item" href="paymentStudentSearchform.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i> Take Payment</a></li>
+
+      <li><a class="treeview-item" href="viewStudentAttendenceDetails.html" target="_blank" rel="noopener"><i
+            class="icon fa fa-circle-o"></i>view Payment list</a></li>
+      <li><a class="treeview-item" href="updateStudentAttendence.html"><i class="icon fa fa-circle-o"></i> Update
+          Payment Information</a></li>
+      
     </ul>
-
-
+  </li>
+    </ul>
     </div>
   </aside>
-
   <main class="app-content">
     <div class="app-title">
       <div>
@@ -210,134 +236,148 @@
       </ul>
     </div>
     <!--start row-->
-    <div class="row">
+    <div class="row justify-content-md-center">
       <!--Start  section-->
       <!-- Student Details Area Start Here -->
-
-      <div class="col-md-3 col-sm-12">
-        <div class="heading-layout1">
-          <div class="item-title">
-            <a class="mb-2 btn btn-primary btn-block" href="#">Class Teacher Image</a>
-          </div>
-        </div>
-        <div class="img-fluid mx-auto" alt="responsive image">
-          <img class="mw-100 article" src="images/teacherinformation1.jpg" alt="responsive image"> </div>
-      </div>
-
       <div class="col-md-9">
         <div class="">
           <div class="tile">
             <div class="tile-body">
-              <h5 class="tittle">About Me</h5>
-            </div>
-
-            <div class="container">
               <div class="row">
-                <div class="col">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      <strong>Name:</strong>
-                      <p class="list-group justify-content-between align-items-center"> John Doe </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Gender:
-                      <p class="list-group justify-content-between align-items-center"> 38 Years </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Location
-                      <p class="list-group justify-content-between align-items-center"> Rome, Italy </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Phone
-                      <p class="list-group justify-content-between align-items-center"> (800) 123-4567 </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Date of Birth
-                      <p class="list-group justify-content-between align-items-center"> 12/10/2001 </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Blood Grop
-                      <p class="list-group justify-content-between align-items-center"> O+ </p>
-                    </li>
-
-                  </ul>
+                <div class="col-md-3 col-sm-12">
+                  <div class="heading-layout1">
+                    <div class="item-title">
+                      <a class="mb-2 btn btn-primary btn-block" href="#">Class Teacher Image</a>
+                    </div>
+                  </div>
+                  <div class="img-fluid mx-auto" alt="responsive image">
+                    <img class="mw-100 article" src="images/teacherinformation1.jpg" alt="responsive image"> </div>
                 </div>
-                <div class="col">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Class teacher of
-                      <p class="list-group justify-content-between align-items-center"> Nine </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Section
-                      <p class="list-group justify-content-between align-items-center"> A </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Shift
-                      <p class="list-group justify-content-between align-items-center"> Evening </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Join Year
-                      <p class="list-group justify-content-between align-items-center"> 2019 </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Group
-                      <p class="list-group justify-content-between align-items-center"> Sceince</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="col-md-9">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <strong>Name:</strong>
+                            <p class="list-group justify-content-between align-items-center"> John Doe </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Gender:
+                            <p class="list-group justify-content-between align-items-center"> 38 Years </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Location
+                            <p class="list-group justify-content-between align-items-center"> Rome, Italy </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Phone
+                            <p class="list-group justify-content-between align-items-center"> (800) 123-4567 </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Date of Birth
+                            <p class="list-group justify-content-between align-items-center"> 12/10/2001 </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Blood Grop
+                            <p class="list-group justify-content-between align-items-center"> O+ </p>
+                          </li>
 
-                      <p class="list-group justify-content-between align-items-center"> 02 </p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Father name
-                      <p class="list-group justify-content-between align-items-center"> Jamal </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Mother Name
-                      <p class="list-group justify-content-between align-items-center"> Jarin </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Mobile No
-                      <p class="list-group justify-content-between align-items-center"> 0198356723 </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      NID
-                      <p class="list-group justify-content-between align-items-center"> 12345678901234567 </p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      ..
-                      <p class="list-group justify-content-between align-items-center"> Business</p>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      ..
-                      <p class="list-group justify-content-between align-items-center"> House wife </p>
-                    </li>
-                  </ul>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Class teacher of
+                            <p class="list-group justify-content-between align-items-center"> Nine </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Section
+                            <p class="list-group justify-content-between align-items-center"> A </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Shift
+                            <p class="list-group justify-content-between align-items-center"> Evening </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Join Year
+                            <p class="list-group justify-content-between align-items-center"> 2019 </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Group
+                            <p class="list-group justify-content-between align-items-center"> Sceince</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            .
+                            <p class="list-group justify-content-between align-items-center">. </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Father name
+                            <p class="list-group justify-content-between align-items-center"> Jamal </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mother Name
+                            <p class="list-group justify-content-between align-items-center"> Jarin </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mobile No
+                            <p class="list-group justify-content-between align-items-center"> 0198356723 </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            NID
+                            <p class="list-group justify-content-between align-items-center"> 12345678901234567 </p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            salary
+                            <p class="list-group justify-content-between align-items-center"> 20000</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            .
+                            <p class="list-group justify-content-between align-items-center">.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- BIO AND SKILLS -->
+                    <!-- Blog -->
+                  </div>
                 </div>
               </div>
-
-              <!-- BIO AND SKILLS -->
-              <!-- Blog -->
             </div>
           </div>
         </div>
       </div>
+      <!--End -->
+      <div class="col-md-9">
+        <div class="tile">
+          <div class="tile-body">
+            <div class="row">
+              <div class="col-md-3 col-sm-12">
+                <p></p>
 
-      <div class="col-md-12 app-title my-2">
-        <div>
-          <h1><i class=""> </i> Teacher</h1>
-          <p>Manage</p>
+              </div>
+              <div class="col-md-9">
+                <div class="container">
+                  <div class="row">
+                    <p></p>
+                  </div>
+                  <!-- BIO AND SKILLS -->
+                  <!-- Blog -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
+      <!--End-->
     </div>
     <!-- Student Details Area End Here -->
     <!--End  section -->
-    </div>
     <!--End Row-->
   </main>
   <!-- Essential javascripts for application to work-->
