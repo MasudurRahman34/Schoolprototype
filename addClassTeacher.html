@@ -385,7 +385,7 @@
                     <div class="tile-footer">
                         <div class="row">
                             <div class="col-md-12">
-                                <button class="btn btn-primary" type="submit" style="float: right;"><i
+                                <button class="btn btn-primary" type="submit" style="float: right;" id="Swal"><i
                                         class="fa fa-fw fa-lg fa-check-circle"></i>Submit</button>&nbsp;&nbsp;&nbsp;<a
                                     class="btn btn-secondary" href="#"><i
                                         class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
@@ -469,6 +469,27 @@
                     swal("Deleted!", "Your imaginary file has been deleted.", "success");
                 } else {
                     swal("Cancelled", "Your imaginary file is safe :)", "error");
+                }
+            });
+        });
+    </script>
+     <script type="text/javascript">
+        $('#Swal').click(function () {
+            swal({
+                title: "Are you sure",
+                text: "You will be able to save this imaginary file!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, Submit it!",
+                cancelButtonText: "No, cancel plx!",
+                closeOnConfirm: false,
+                closeOnCancel: false
+            }, function (isConfirm) {
+                if (isConfirm) {
+                    swal("Submit!", "Your imaginary file has been submited.", "success");
+
+                } else {
+                    swal("Cancelled", "Your imaginary file is not save in database :)", "error");
                 }
             });
         });
